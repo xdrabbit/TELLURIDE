@@ -1,6 +1,6 @@
 {
   "name": "ghost-lens",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Behavioral idle-detection contextual help overlay for React and Web Components",
   "main": "src/index.js",
   "module": "src/index.js",
