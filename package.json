@@ -5,19 +5,36 @@
   "main": "src/index.js",
   "module": "src/index.js",
   "types": "src/index.d.ts",
-  "keywords": ["ghost-lens", "contextual-help", "onboarding", "ux", "overlay", "react", "web-components"],
+  "keywords": [
+    "ghost-lens",
+    "contextual-help",
+    "onboarding",
+    "ux",
+    "overlay",
+    "react",
+    "web-components"
+  ],
   "author": "Tom Ashby",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xdrabbit/ghost-lens"
+    "url": "git+https://github.com/xdrabbit/ghost-lens.git"
   },
   "peerDependencies": {
     "react": ">=17.0.0",
     "react-dom": ">=17.0.0"
   },
+  "exports": {
+    ".": "./src/index.js",
+    "./react": "./src/react.js",
+    "./web-component": "./src/web-component.js"
+  },
   "peerDependenciesMeta": {
-    "react": { "optional": true },
-    "react-dom": { "optional": true }
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
   }
 }
