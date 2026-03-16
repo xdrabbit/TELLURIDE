@@ -731,6 +731,14 @@ lens.<span class="fn">destroy</span>();</pre>
     // In production this would be: import { GhostLensEngine } from 'ghost-lens'
     // For this demo we inline the core engine
 
+    // Release Identity Log
+    fetch('/release-manifest.json')
+      .then(r => r.json())
+      .then(m => {
+        console.log(`%c[Release Identity] ${m.build.build_id}`, "color: #00c8ff; font-weight: bold;");
+      })
+      .catch(() => {});
+
     const GHOST_ATTR = 'data-ghost';
 
     class GhostLensEngine {
